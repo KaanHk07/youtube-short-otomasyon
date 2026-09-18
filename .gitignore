@@ -1,0 +1,14 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# ShortMaker ciktilari ve calisma dosyalari
+.temp_files/
+output/
+logs/
+models/
+*.mp4
+
+# Yerel arac verisi
+.wrongstack/

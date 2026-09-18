@@ -1,0 +1,39 @@
+# ShortMaker ayarlari: URL -> altyazili dikey Shorts.
+
+output_dir: output
+work_dir: .temp_files/shortmaker     # indirilen ve ara dosyalar (islem bitince silinir)
+
+video:
+  duration: 60              # hedef Shorts suresi: 30 / 45 / 60
+  resolution: 1080x1920     # 1080x1920 veya 720x1280
+  max_fps: 60               # kaynak FPS bu degere kadar korunur, ustu / degisken FPS -> fallback_fps
+  fallback_fps: 30
+  crf: 20                   # H.264 kalite (dusuk = daha iyi)
+  preset: medium
+
+subtitles:
+  enabled: true
+  highlight_active_word: true
+  min_words: 2
+  max_words: 7
+  max_chars: 24             # bir satirdaki yaklasik en fazla karakter
+  font: Arial Black         # yoksa libass en yakin kalin fontu secer
+  font_size: 86             # 1080 genislik icin; 720'de oranla kuculur
+  bottom_margin_ratio: 0.28 # alt kenardan yukseklik orani (Shorts arayuz alani disinda)
+
+crop:
+  smart: true               # yuz/hareket takipli akilli crop (kapaliysa merkez crop)
+  sample_fps: 6
+
+silence:
+  remove: true
+  min_silence_sec: 0.7      # bundan uzun bosluklar kisaltilir
+  keep_padding_sec: 0.15    # kesimin iki yaninda birakilan dogal pay
+
+whisper:
+  model: small              # tiny / base / small / medium / large-v3
+  device: auto              # auto / cuda / cpu
+
+rights:
+  default: own              # own / licensed - baska deger islenmez
+  allowed: [own, licensed]

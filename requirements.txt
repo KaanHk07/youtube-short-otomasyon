@@ -1,0 +1,6 @@
+# ShortMaker (URL -> altyazili dikey Shorts)
+yt-dlp>=2025.1.15
+PyYAML>=6.0.2
+faster-whisper>=1.1.0
+opencv-python>=4.10
+numpy>=1.26

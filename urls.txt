@@ -1,0 +1,4 @@
+# Her satira bir video URL'si yazin. # ile baslayan satirlar yok sayilir.
+# Yalnizca sahibi oldugunuz / kullanma izniniz olan icerikleri ekleyin.
+# Ornek:
+# https://youtube.com/shorts/xxxxxxxxxxx
